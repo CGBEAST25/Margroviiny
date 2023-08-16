@@ -86,13 +86,13 @@ li {
 
 .active {
     color: rgb(192, 228, 35);
-    text-decoration: underline;
 }
 
 /* hero section */
 .home {
     box-sizing: content-box;
     padding-top: 120px;
+    padding-bottom: 15px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)), url(student.jpg);
     background-repeat: no-repeat;
     background-position: left;
@@ -109,8 +109,13 @@ li {
     display: flex;
     gap: 1.3rem;
 }
+.newsletter input{
+    
+}
 
-.newsletter h1 {}
+.newsletter input {
+    border: 1px solid green;
+}
 
 .newsletter p {
     letter-spacing: 1.1px;
@@ -145,7 +150,7 @@ li {
         display: block;
     }
 
-    .input-message {
+    .newsletter input {
         margin: 10px auto;
     }
 
@@ -187,9 +192,9 @@ article {
 }
 
 .lorem {
-    font-size: 19px;
+    font-size: 17px;
     color: rgb(137, 201, 201);
-    color: white;
+    color: rgb(255 255 255 / 90%);
     width: 60%;
     margin-left: 1%;
     line-height: 1.5;
@@ -197,7 +202,42 @@ article {
 
 }
 
+.homeCta button a{
+   color: white;
+   text-decoration: none;
+}
+.homeCta button{
+    margin-top: 0%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: small;
+    margin-left: 3%;
+    margin-top: 5%;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 1.1px;
 
+}
+.homeCta button:hover{
+    background-color: transparent;
+    
+}
+
+.second-btn{
+    color: black !important;
+}
+
+
+.homeCta button:last-child{
+    background-color: #CDDC39;
+    border: 1px solid #CDDC39;
+    letter-spacing: 1.3px;
+}
+@media only screen and (min-width: 850px) {
+    .homeCta button{
+        padding: 15px;
+    }
+}
 .home .pack {
     padding-bottom: 10%;
     text-align: end;
@@ -298,7 +338,7 @@ article {
 }
 
 .about h1 {
-    color: darkolivegreen;
+    color: rgba(156, 246, 0, 0.846);
     text-shadow: #191919 3px 2px;
 }
 
@@ -343,7 +383,6 @@ article {
 /* Contact Section */
 
 .contact {
-    padding-bottom: 10px;
     overflow: hidden;
     /* background-color: #192929; */
     background-image: url(contact.jpg);
@@ -424,10 +463,10 @@ button {
 
 
 .contact button {
-    border: 2px solid #CDDC39;
+    border: 2px solid #869e15;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    background-color: #c0e423;
+    background-color: #869e15;
     margin-top: 5px;
     padding: 5px;
     font-size: 18px;
@@ -442,15 +481,6 @@ footer {
     text-transform: capitalize;
 
 }
-
-.conclusion {
-    text-align: center;
-    font-size: 15px;
-    margin-top: 70px;
-    color: rgba(245, 245, 245, 0.838);
-    padding: 10px;
-}
-
 /*hover animation*/
 
 .contact button:hover {
@@ -461,8 +491,9 @@ footer {
 
 
 button:hover {
-    color: rgb(0, 248, 248);
-    background-color: #8BC34A;
+    background-color: rgb(205, 220, 57);
+    color: black;;
+
     color: black;
     transform: scale(1.1);
 }
@@ -517,9 +548,12 @@ li:hover {
         padding-top: 30px;
     }
 
+    .detail{
+        margin-bottom: 15px;
+    }
     .detail,
     .lorem {
-        color: rgba(164, 173, 180, 0.795);
+        color:rgb(255 255 255 / 80%)
     }
 
     article {
@@ -547,11 +581,6 @@ li:hover {
 
 
 
-    .lorem {
-        font-size: 16px;
-        width: 95%;
-        margin: 0 auto;
-    }
 
     .home h2 {
         font-size: 1.5rem;
@@ -563,7 +592,7 @@ li:hover {
 
     /*services.mobile*/
     .container {
-        padding-inline: 16vw;
+        padding-inline: 18vw;
         margin-top: 50px;
     }
 
@@ -573,7 +602,8 @@ li:hover {
     }
 
     .child {
-        margin-top: 30px;
+        margin-top: 40px;
+        padding-bottom: 15px;
         width: 100%;
         height: auto;
     }
@@ -635,7 +665,7 @@ li:hover {
 
     input,
     textarea {
-        width: 85%;
+        width: 90%;
     }
 
     /*page margin correction for mobile*/
@@ -663,7 +693,13 @@ li:hover {
     header {
         height: auto;
     }
-
+    
+    
+    .lorem {
+        font-size: 15px;
+        width: 95%;
+        margin: 0 auto;
+    }
     .about-content p {
         width: 75%;
 
@@ -709,11 +745,6 @@ li:hover {
 
     .mobile-menu {
         margin-right: 0px;
-    }
-
-    .conclusion {
-        text-align: left;
-        font-size: 14px;
     }
 
 }
