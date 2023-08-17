@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clients.css">
+    <title>clients page</title>
+</head>
+
+<body>
+    <header>
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <h1> margroove </h1>
+                </a>
+                <ul>
+                    <li><a href="index.html" class="active">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+
+            <img class="menu-btn" src="images (5).png" width="22px">
+            <!-- <div class="menu-btn" src="images (5).png" style="width: 22px; height: 22px; font-weight: bolder;">☰</div> -->
+        </header>
+    </header>
+    <main>
+        <section>
+            <div class="heading">
+            <h1>Our Clients</h1>
+        </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="6.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>suzie willingberg</h1>
+                    <p>Ava is a young professional who feels overwhelmed by the demands of her job and personal life.
+                     she struggles with imposter syndrome and self-doubt.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="5.jpeg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>deshaw allen</h1>
+                    <p>Deshaw is a recovering addict who seeks guidance from Margroove International to maintain his sobriety and rebuild
+                        his life.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="4.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>khloe stilinski</h1>
+                    <p> Khloe is a young professional who feels lost and uncertain about her future. Margroove helps her
+                        discover her passions and talents and create a fulfilling career path.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="2.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>John Smith</h1>
+                    <p>
+                        John is a retired veteran who struggles with PTSD. Margroove International offers him a safe and
+                        compassionate space to heal from his trauma and find peace of mind.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="3.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>Rachel Kim</h1>
+                    <p> 
+                        Rachel is a high school student who struggles with self-esteem and body image issues. Margroove International helps her
+                        build confidence and develop a positive self-image through counseling and support.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="7.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>stacie nevermore</h1>
+                    <p>Stacie is a busy mom who feels overwhelmed and stressed. Margroove helps her prioritize self-care and
+                        establish healthy boundaries to balance her responsibilities and personal life.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="2.jpg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>kevin bush</h1>
+                    <p>Kevin is a recent divorcee who struggles with loneliness and depression. Margroove International supports him in his
+                        journey to rediscover himself and find happiness and companionship.
+                        </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCover">
+                    <img src="images (13).jpeg" alt="">
+
+                </div>
+                <div class="container">
+                    <h1>george mcmahon</h1>
+                    <p>George is a successful businessman who feels unfulfilled and disconnected from his true self. Margroove International
+                        helps him explore his spirituality and find purpose in his career and personal life.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="contact">
+      
+                <div class="cta">
+                    <p>contact us below to sign up today and join the family</p>
+                    <button>contact</button>
+                </div>
+                
+
+                <div class="letter-content">
+                    <h3>Sign up for newsLetter</h3>
+                  <p>
+                    <!-- you can join our newsletter to recieve 
+                    daily emails from us about the latest and
+                    newest articles from our esteemed writers
+                    to keep you up to speed and informed about us, join 
+                    the now and have informations deliverd 
+                    to your front step today -->
+                  </p>
+            
+                <input placeholder="Email" type="email">  
+                <button class="newsLetter-btn">subscribe</button>
+
+              </div>
+
+
+
+            </div>
+        </div>
+
+
+
+        
+        <div class="social">
+            <h4>About us</h4>
+            <p>You can follow us on the following social media platforms</p>
+            <span class="icon">
+
+                <!-- Facebook -->
+                <i class="fab fa-facebook-f fa-.5x" style="color: #3c996a;"></i>
+                <!-- Twitter -->
+                <i class="fab fa-twitter fa-.5x" style="color: #3c996a;"></i>
+                <!-- Linkedin -->
+                <i class="fab fa-linkedin-in fa-.5x" style="color: #3c996a;"></i>
+                <!-- Youtube -->
+                <i class="fab fa-youtube fa-.5x" style="color: #3c996a;"></i>
+                <!-- Reddit -->
+                <i class="fab fa-reddit-alien fa-.5x" style="color: #3c996a;"></i>
+
+            </span>
+        </div>
+    </footer>
+    </footer>
+
+    <script>
+
+
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('ul')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>

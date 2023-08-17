@@ -96,7 +96,7 @@ li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)), url(student.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: cover
+    background-size: cover;
 }
 
 /* newsletter */
@@ -301,7 +301,6 @@ article {
 .container {
     display: flex;
     align-items: center;
-    padding-inline: 7vw;
 }
 
 .child {
