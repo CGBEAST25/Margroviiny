@@ -5,6 +5,10 @@
     font-family: poppins, sans-serif;
 }
 
+svg{
+    rotate: -30deg;
+}
+
 main{
     padding: 80px 10px;
 }
@@ -23,9 +27,7 @@ header {
 
 nav,
 ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-left: 3%;
 }
 
 li {
@@ -37,6 +39,12 @@ a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 
+}
+button a{
+    color: black;
+}
+button a:hover{
+    color: rgb(255, 255, 255);
 }
 
 .about-img {
@@ -185,8 +193,14 @@ footer span{
         text-align: center;
     }
 }
+@media only screen and (min-width: 650px) {
 
+nav,
+ul {
+    margin-left: 5%;
+}
 
+}
 
 
 

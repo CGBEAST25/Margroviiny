@@ -17,7 +17,7 @@ html {
 
 section {
     padding: 80px 0;
-    height: auto !important;
+    height: auto;
 }
 
 section h1 {
@@ -33,6 +33,11 @@ h1 {
 .home div {
     width: 100%;
     margin-top: 0;
+}
+.tree-head-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* end of the basic structure styling of the webpage */
@@ -92,7 +97,7 @@ li {
 .home {
     box-sizing: content-box;
     padding-top: 120px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)), url(student.jpg);
     background-repeat: no-repeat;
     background-position: left;
@@ -109,9 +114,8 @@ li {
     display: flex;
     gap: 1.3rem;
 }
-.newsletter input{
-    
-}
+
+.newsletter input {}
 
 .newsletter input {
     border: 1px solid green;
@@ -176,12 +180,11 @@ article {
     margin-left: 1%;
 }
 
-
 .detail {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: rgb(137, 201, 201);
     color: white;
-    font-size: 23px;
+    font-size: 25px;
     text-transform: capitalize;
     margin-left: 1%;
 
@@ -202,11 +205,12 @@ article {
 
 }
 
-.homeCta button a{
-   color: white;
-   text-decoration: none;
+.homeCta button a {
+    color: white;
+    text-decoration: none;
 }
-.homeCta button{
+
+.homeCta button {
     margin-top: 0%;
     border-radius: 5px;
     padding: 10px;
@@ -216,30 +220,34 @@ article {
     background-color: transparent;
     font-weight: bold;
     letter-spacing: 1.1px;
+    border: 1px solid #CDDC39;
+
 
 }
-.homeCta button:hover{
+
+.homeCta button:hover {
     background-color: transparent;
-    
+
 }
 
-.second-btn{
+.second-btn {
     color: black !important;
 }
 
 
-.homeCta button:last-child{
+.homeCta button:last-child {
     background-color: #CDDC39;
     border: 1px solid #CDDC39;
     letter-spacing: 1.3px;
 }
+
 @media only screen and (min-width: 850px) {
-    .homeCta button{
+    .homeCta button {
         padding: 15px;
     }
 }
+
 .home .pack {
-    padding-bottom: 10%;
     text-align: end;
 }
 
@@ -337,7 +345,7 @@ article {
 }
 
 .about h1 {
-    color: rgba(156, 246, 0, 0.846);
+    color: rgb(60, 153, 106);
     text-shadow: #191919 3px 2px;
 }
 
@@ -454,7 +462,7 @@ button {
     margin-top: 10%;
     color: white;
     background-color: transparent;
-    border: 1px solid #CDDC39;
+    border: 1px solid rgb(60, 153, 106);
 
 }
 
@@ -480,6 +488,7 @@ footer {
     text-transform: capitalize;
 
 }
+
 /*hover animation*/
 
 .contact button:hover {
@@ -491,7 +500,8 @@ footer {
 
 button:hover {
     background-color: rgb(205, 220, 57);
-    color: black;;
+    color: black;
+    ;
 
     color: black;
     transform: scale(1.1);
@@ -517,7 +527,7 @@ li:hover {
 
 
 @media only screen and (max-width: 950px) {
-   
+
     .services {
         overflow-x: hidden;
     }
@@ -547,12 +557,13 @@ li:hover {
         padding-top: 30px;
     }
 
-    .detail{
+    .detail {
         margin-bottom: 15px;
     }
+
     .detail,
     .lorem {
-        color:rgb(255 255 255 / 80%)
+        color: rgb(255 255 255 / 80%)
     }
 
     article {
@@ -592,7 +603,7 @@ li:hover {
     /*services.mobile*/
     .container {
         padding-inline: 18vw;
-        margin-top: 50px;
+        margin-top: 15px;
     }
 
     .container {
@@ -616,6 +627,7 @@ li:hover {
 
     .services h1 {
         margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     .child h3 {
@@ -692,13 +704,22 @@ li:hover {
     header {
         height: auto;
     }
-    
-    
-    .lorem {
-        font-size: 15px;
-        width: 95%;
-        margin: 0 auto;
+
+
+    .detail {
+        font-size: 23px;
     }
+
+    .home .pack {
+        margin-top: 150px;
+    }
+
+    .lorem {
+        font-size: 16px;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
     .about-content p {
         width: 75%;
 
@@ -746,4 +767,14 @@ li:hover {
         margin-right: 0px;
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+
+
+
+.home {
+    height: 90vh;
+    margin-top: 0;
+}
 }
