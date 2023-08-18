@@ -145,10 +145,6 @@ li {
 
 /* a quickmedia query for some style so far */
 @media only screen and (max-width: 700px) {
-    .home {
-        background-size: 1500px;
-    }
-
     .letter-content {
         margin: 10px auto;
         display: block;
@@ -707,7 +703,7 @@ li:hover {
 
 
     .detail {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .home .pack {
@@ -715,7 +711,7 @@ li:hover {
     }
 
     .lorem {
-        font-size: 16px;
+        font-size: 15px;
         width: 95%;
         margin-bottom: 30px;
     }
@@ -752,9 +748,7 @@ li:hover {
         margin-left: 0px;
     }
 
-    .home {
-        margin-top: 0;
-    }
+  
 
     .menu-btn {
         display: block;
@@ -776,5 +770,7 @@ li:hover {
 .home {
     height: 90vh;
     margin-top: 0;
+    background-size: 1500px;
+    background-position: center;
 }
 }
