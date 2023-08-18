@@ -94,7 +94,7 @@ button {
     background-color: transparent;
     border: solid 2px rgb(60, 153, 106);
     cursor: pointer;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .cta{
@@ -108,11 +108,26 @@ button {
 button:hover {
     background-color: rgb(60, 153, 106);
     color: rgba(255, 255, 255, 0.878);
+
 }
+
 footer{
     text-align: center; 
     padding: 80px auto;
 }
+
+footer button{
+    background-color: rgb(60, 153, 106);
+    color: rgba(255, 255, 255, 0.878);    
+}
+
+footer button:hover {
+   color: rgb(60, 153, 106);
+   background-color: rgba(255, 255, 255, 0.878);
+   transform: scale(1.1);
+
+}
+
 .conclusion{
     font-size: 16px;
         margin: 20px 0px;
