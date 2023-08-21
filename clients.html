@@ -21,12 +21,13 @@
 </head>
 
 <body>
-    <header>
+
         <header>
             <nav>
                 <a href="index.html" class="logo">
                     <h1> margroove </h1>
                 </a>
+                <img class="theme" src="sun.png" alt="">
                 <ul>
                     <li><a href="index.html" class="active">home</a></li>
                     <li><a href="#services">services</a></li>
@@ -34,13 +35,14 @@
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-
+            
             <img class="menu-btn" src="images (5).png" width="22px">
-            <!-- <div class="menu-btn" src="images (5).png" style="width: 22px; height: 22px; font-weight: bolder;">☰</div> -->
         </header>
-    </header>
     <main>
         <section>
+
+
+
             <div class="heading">
             <h1>Our Clients</h1>
         </div>
@@ -51,7 +53,7 @@
                 </div>
                 <div class="container">
                     <h1>suzie willingberg</h1>
-                    <p>Suzie is a young professional who feels overwhelmed by the demands of her job and personal life.
+                    <p>Suzie is a professional who feels overwhelmed by the demands of her job and personal life.
                      she struggles with imposter syndrome and self-doubt.
                     </p>
                 </div>
@@ -178,15 +180,15 @@
             <span class="icon">
 
                 <!-- Facebook -->
-                <i class="fab fa-facebook-f fa-.5x" style="color: #16a65e;"></i>
+                <i class="fab fa-facebook-f fa-.5x"></i>
                 <!-- Twitter -->
-                <i class="fab fa-twitter fa-.5x" style="color: #16a65e;"></i>
+                <i class="fab fa-twitter fa-.5x"></i>
                 <!-- Linkedin -->
-                <i class="fab fa-linkedin-in fa-.5x" style="color: #16a65e;"></i>
+                <i class="fab fa-linkedin-in fa-.5x"></i>
                 <!-- Youtube -->
-                <i class="fab fa-youtube fa-.5x" style="color: #16a65e;"></i>
+                <i class="fab fa-youtube fa-.5x"></i>
                 <!-- Reddit -->
-                <i class="fab fa-reddit-alien fa-.5x" style="color: #16a65e;"></i>
+                <i class="fab fa-reddit-alien fa-.5x"></i>
 
             </span>
         </div>
@@ -201,14 +203,41 @@
 
         menuBtn.addEventListener('click', () => {
             navlinks.classList.toggle('mobile-menu')
-        })
-    </script>
 
-<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
-  
+        });
+
+
+        const togg = document.querySelector('.theme')
+
+        const section = document.querySelector('section')
+        const contactPage = document.querySelector('.contact')
+        const socialPage = document.querySelector('.social')
+        const headers = document.querySelector("section h1")
+
+        const card = document.querySelectorAll('.card')
+        const icons = document.querySelectorAll('.fab')
+
+            togg.addEventListener('click', () => {
+                section.classList.toggle('dark-section')     
+                socialPage.classList.toggle('dark-social')
+                contactPage.classList.toggle('dark-contact')
+                headers.classList.toggle("dark-section-h1")
+
+                
+                card.forEach(function(card){
+                    card.classList.toggle("dark-card");
+                });
+      
+
+                icons.forEach(function(icons){
+                    icons.classList.toggle("dark-fab");
+                });
+
+            });
+    </script>
+ 
+
+
 </body>
 
 </html>

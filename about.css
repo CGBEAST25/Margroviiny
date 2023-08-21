@@ -5,12 +5,25 @@
     font-family: poppins, sans-serif;
 }
 
+.theme-toggle{
+    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    background-color: rgb(75, 200, 29);
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    box-shadow: 2px 3px 4px red;
+}
+
 svg{
     rotate: -30deg;
 }
 
 main{
     padding: 80px 10px;
+    transition: all .3s ease-in-out;
 }
 
 header {
@@ -23,6 +36,10 @@ header {
     background-position: center;
     background-size: cover;
     color: rgb(255, 255, 255);
+}
+
+span{
+    color: rgb(25, 98, 20);
 }
 
 nav,
@@ -131,19 +148,22 @@ footer button:hover {
 .conclusion{
     font-size: 16px;
         margin: 20px 0px;
-        color: rgba(0, 0, 0, 0.838);
-        padding: 20px;}
+        color: rgba(255, 255, 255, 0.838);
+        padding: 20px;
+    }
 footer p{
     font-size: .8rem;
     text-align: center;
 }
 .call-to-action{
-    background-color:rgb(186 241 241);
+    background-color:rgb(14 43 43);
     padding: 40px 0;
+    transition: all .3s ease-in-out;
 }
 .social{
     background-color: #eee;
     padding: 25px;
+    transition: all .3s ease-in-out;
 }
 footer span{
     margin-top: 20px;
@@ -155,7 +175,37 @@ footer span{
     color: rgb(48, 179, 68);
     margin-left: 0;
     text-shadow: #191919 -1px -1px;
+    display: block;
+    width: fit-content;
 }
+img{
+    height: 55%;
+    object-fit: cover; 
+}
+
+.fab{
+    color:  rgb(255, 255, 255);
+    margin-inline: 1px;
+    cursor: pointer;
+}
+/* ------dark theme------ */
+
+.dark-main{
+    background-color: #192929;
+    color: white;
+}
+
+.dark-call-to-action{
+    background-color: #0e1515;
+}
+.dark-button{
+    color: white;
+}
+.dark-social{
+    background-color: #192929;
+    color: white;
+}
+/* ------End of dark theme------ */
 
 @media only screen and (min-width: 950px) {
     
@@ -172,6 +222,8 @@ footer span{
     img{
         width: 50%;
         float: right;
+        object-fit: cover; 
+        height: 75%;
     }
 
   main p{
@@ -196,11 +248,10 @@ footer span{
       padding-bottom: 0;
 
     }
-    footer{
-        clear: right;
-    }
     footer span{
         margin-top: 5px;
+        clear: right;
+
     }
     footer p{
         font-size: .8rem;

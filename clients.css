@@ -5,9 +5,58 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+.theme{
+    cursor: pointer;
+    position:fixed;
+    top: 2%;
+    right: 20%;
+    background-color: transparent;
+    width: 25px;
+    height: 25px; 
+}
+
+section, .card, .social, .contact, .fab, h1{
+    transition: all .3s ease-in-out;
+}
+
+/* for medium screen and up */
+
+
+@media only screen and (min-width: 650px) {
+    .heading h1{
+        font-size: 7vmin;
+    }
+
+    .card {
+        box-shadow: 3px 3px 3px 1px #9E9E9E;
+        background-color: inherit;
+    }
+
+
+    .theme{
+        cursor: pointer;
+        position:fixed;
+        top: 3%;
+        right: 2%;
+        background-color: transparent;
+        width: 25px;
+        height: 25px; 
+    }
+}
+/* End of  medium screen and up style */
+
 .menu-btn {
     display: none;
 }
+
+.fab{
+    color: #ffffff;
+    margin-inline: 1px;
+    cursor: pointer;
+    margin-inline: 1px;
+}
+
 
 section {
     background-color: rgb(240, 233, 233);
@@ -174,7 +223,6 @@ button:hover{
 .newsLetter-btn {
     cursor: pointer;
     border: solid 2px #c0e423;
-    border-radius: 15px;
     padding: 6px 12px;
     background-color: #c0e423;
     letter-spacing: 1.1px;
@@ -241,6 +289,53 @@ footer span {
     text-align: center;
 }
 
+/* ------dark theme------ */
+.dark-fab{
+    color:  rgb(0, 252, 126);
+}
+
+.dark-card{
+    color: white;
+    background-color: #192929;
+}
+
+.dark-section{
+    background-color: #192929;
+}
+
+.dark-contact{
+    background-color: rgb(14 43 43);
+    color: white;
+}
+.dark-social{
+    background-color: #192929;
+    color: white;
+}
+
+
+
+button:hover{
+    color:rgb(60, 153, 106);
+}
+.dark-section-h1{
+    color: white;
+}
+.dark-newsLetter-btn:hover{
+    color: #fff ;
+}
+
+
+@media only screen and (min-width: 650px) {
+    .card{
+        box-shadow: 3px 3px 3px 1px rgb(56 61 58);
+    
+    }
+}
+
+/* ------End of dark theme------ */
+
+
+
 @media only screen and (max-width: 650px) {
     input{
         padding: 7px 0;
@@ -248,7 +343,7 @@ footer span {
     }
     header {
         height: auto;
-        margin-top: 15px;
+        /* margin-top: 15px; */
 
     }
 
@@ -324,18 +419,6 @@ footer span {
         padding: 40px 10px;
         display: flex;
         flex-direction: column;
-    }
-
-}
-
-@media only screen and (min-width: 650px) {
-    .heading h1{
-        font-size: 7vmin;
-    }
-
-    .card {
-        box-shadow: 3px 3px 3px 1px #9E9E9E;
-        background-color: inherit;
     }
 
 }
