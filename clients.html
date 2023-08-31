@@ -27,7 +27,7 @@
                 <a href="index.html" class="logo">
                     <h1> margroove </h1>
                 </a>
-                <img class="theme" src="sun.png" alt="">
+                <img class="theme" src="night.png" alt="">
                 <ul>
                     <li><a href="index.html" class="active">home</a></li>
                     <li><a href="#services">services</a></li>
@@ -232,6 +232,16 @@
                 icons.forEach(function(icons){
                     icons.classList.toggle("dark-fab");
                 });
+
+                
+        // themeChange image transition
+        if(document.querySelector('.theme').src.includes( "night.png")) {
+            document.querySelector('.theme').src = "sun.png"
+        }
+        else{
+            document.querySelector('.theme').src = "night.png"
+        }
+
 
             });
     </script>

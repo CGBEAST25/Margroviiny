@@ -54,6 +54,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
 }
 
 nav {
@@ -327,6 +328,19 @@ article {
     padding: 18px;
 }
 
+/*testimonial Section*/
+.swiper {
+    width: 300px;
+    height: 300px;
+    background: #ededed;
+    display: flex;
+    margin-top: 20px;
+    }
+
+
+
+
+
 /*About Section*/
 
 .about {
@@ -352,8 +366,6 @@ article {
 .about p {
     margin-left: 3%;
     width: 90%;
-    letter-spacing: 1px;
-    line-height: 1.4;
 }
 
 .about span {
@@ -729,12 +741,12 @@ li:hover {
         background-color: #192929;
         display: flex;
         position: fixed;
-        top: 0.3%;
+        top: 6.3%;
         right: 0.3%;
         flex-direction: column;
         justify-items: start;
         align-items: flex-start;
-        width: 33%;
+        width: 35%;
         height: auto;
         padding-bottom: 10px;
         margin-right: -200px;
@@ -752,8 +764,8 @@ li:hover {
     .menu-btn {
         display: block;
         position: absolute;
-        top: 8px;
-        right: 2px;
+        top: 20px;
+        right: 20px;
     }
 
     .mobile-menu {
@@ -764,7 +776,9 @@ li:hover {
 
 @media only screen and (max-width: 460px) {
 
-
+    .child {
+        box-shadow: 4px 2px 20px 0px rgb(60, 153, 106);
+    }
 
 .home {
     margin-top: 0;
