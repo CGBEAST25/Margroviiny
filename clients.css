@@ -119,6 +119,10 @@ li a {
     transition: ease-out .2s;
 
 }
+.cta a{
+    color: azure;
+    text-decoration: none;
+}
 
 .logo {
     color: inherit;
@@ -369,7 +373,7 @@ button:hover{
         flex-direction: column;
         justify-items: start;
         align-items: flex-start;
-        width: 32%;
+        width: 45%;
         height: auto;
         padding-bottom: 10px;
         margin-right: -350px;
