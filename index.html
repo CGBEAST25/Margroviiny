@@ -8,7 +8,7 @@
 
   <!--- bootsrap icon --->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  
+
   <!--- fonts --->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,14 +36,16 @@
       </a>
       <ul>
         <li><a href="#home" class="active">home</a></li>
-        <li><a href="#services">services</a></li>
+        <li><a href="services.html">services</a></li>
         <li><a href="about.html">about</a></li>
-        <li><a href="#contact">contact</a></li>
         <li><a href="clients.html">our clients</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="faq.html">faq</a></li>
       </ul>
     </nav>
 
-    <img class="menu-btn" src="images (5).png" width="22px">
+    <img class="menu-btn" src="images/hamburger.png" width="22px">
   </header>
 
   <main>
@@ -199,7 +201,7 @@
           </a>
         </div>
         <div class="about-img">
-          <img src="people.jpg" alt="people">
+          <img src="images/people.jpg" alt="people">
 
         </div>
       </div>
@@ -267,7 +269,7 @@
         <div class="form">
 
 
-          <form action="">
+          <form action="#" onsubmit="showAlert();">
 
             <input type="name" id="name" name="name" placeholder="Enter your Name" required>
             <br>
@@ -275,8 +277,8 @@
             <br>
             <input type="text" placeholder="Subject">
             <br>
-            <textarea rows="8" placeholder="Message"></textarea>
-            <button onclick="showAlert();">Send A Message</button>
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button >Send A Message</button>
 
           </form>
 
@@ -337,7 +339,8 @@
       navlinks.classList.toggle('mobile-menu')
     }
     )
-// jvascript for swiper card testimonials
+  </script>
+<!-- // jvascript for swiper card testimonials
     const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -359,11 +362,8 @@
       el: '.swiper-scrollbar',
     },
   });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
 
-  
-  
 </body>
 
 </html>
