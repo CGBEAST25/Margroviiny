@@ -93,7 +93,7 @@ header {
     width: 100%;
     height: 65px;
     text-transform: capitalize;
-    background-color: rgb(60, 153, 106);
+    background-color:#3c996a;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ li:hover {
 .card {
     border-radius: 15px 15px 0 0;
     letter-spacing: 1.1px;
-    line-height: 1.3;
+    line-height: 1.5;
     width: 300px;
     background-color: rgb(240, 233, 233);
     margin: 40px auto;
@@ -204,8 +204,8 @@ button {
 button {
     cursor: pointer;
     padding: 8px 40px;
-    background-color: rgb(60, 153, 106);
-    border: solid 2px rgb(60, 153, 106);
+    background-color:#3c996a;
+    border: solid 2px#3c996a;
     border-radius: 50px;
     margin-top: 30px;
     transition: ease-out .3s;
@@ -215,10 +215,12 @@ button {
 
 button:hover{
     background-color: transparent;
-    border: solid 2px rgb(60, 153, 106);
+    border: solid 2px#3c996a;
     transform: scale(1.1);
-    color: rgb(0, 0, 0);
+}
 
+button:hover a {
+    color: rgb(0, 0, 0);
 }
 
 .first-btn{
@@ -280,6 +282,7 @@ footer p {
     text-align: center;
     margin-top: 5px;
     letter-spacing: 1.1px;
+    line-height: 1.5;
 }
 
 .social {
@@ -329,7 +332,13 @@ button:hover{
     color: #fff ;
 }
 
-
+.footer {
+    padding: 20px 0;
+    background-color: #191919;
+    text-align: center;
+    color: rgb(221, 212, 212);
+    text-transform: capitalize;
+  }
 
 
 /* ------End of dark theme------ */
@@ -409,14 +418,14 @@ button:hover{
         width: 90%;
     }
 
-    div img {
-        /* aspect-ratio: 9/6; */
-    }
-
     .contact {
         padding: 40px 10px;
         display: flex;
         flex-direction: column;
     }
-
+    
 }
+
+/* div img {
+    aspect-ratio: 9/6;
+} */
