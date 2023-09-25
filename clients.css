@@ -228,6 +228,7 @@ button:hover a {
 }
 
 .newsLetter-btn {
+    border-radius: unset;
     cursor: pointer;
     border: solid 2px #c0e423;
     padding: 6px 12px;
