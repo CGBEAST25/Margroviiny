@@ -19,13 +19,41 @@ section {
   height: auto;
 }
 
+section:not(.home) h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
 section h1 {
   text-transform: capitalize;
   text-align: center;
+  position: relative;
+}
+
+section:not(.home) h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background:  #3c996a;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 h1 {
   font-size: 7vmin;
+}
+
+h1, h2, h3 {
+  font-family: cursive;
+
 }
 
 .home div {
@@ -48,12 +76,13 @@ header {
   width: 100%;
   height: 65px;
   text-transform: capitalize;
-  background-color: rgb(60, 153, 106);
+  background-color:#3c996a;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+  z-index: 100;
 }
 
 nav {
@@ -117,28 +146,40 @@ li {
 
 .newsletter input {
   border: 1px solid green;
+  margin: unset;
 }
 
 .newsletter p {
+  word-spacing: 1.1px;
   letter-spacing: 1.1px;
   margin-bottom: 10px;
+  text-align: justify;
+}
+
+form{
+  position: relative;
 }
 
 .newsLetter-btn {
+  margin: unset;
+  border-radius: unset;
+  padding: unset;
+  padding-inline: 5px;
   cursor: pointer;
-  margin-left: 40vw;
-  border: solid 2px #c0e423;
-  border-radius: 50px;
-  padding: 8px 16px;
   background-color: #c0e423;
+  color: #000000e3;
   letter-spacing: 1.1px;
   font-weight: bold;
+  font-size: small;
   transition: all ease 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .newsLetter-btn:hover {
-  background-color: transparent;
-  border: solid 2px #c0e423;
+  background-color: black !important;
 }
 
 /* a quickmedia query for some style so far */
@@ -148,13 +189,10 @@ li {
     display: block;
   }
 
-  .newsletter input {
-    margin: 10px auto;
+  .form-container {
+    margin: 1rem auto;
   }
 
-  .newsLetter-btn {
-    margin-left: 26.5vw;
-  }
 }
 
 /* end of media query */
@@ -163,7 +201,7 @@ li {
 article {
   font-size: 7vmin;
   font-family: "Times New Roman", Times, serif;
-  color: rgb(60, 153, 106);
+  color:#3c996a;
   padding: 80px 0 30px;
   text-transform: capitalize;
   margin-left: 1%;
@@ -193,14 +231,23 @@ article {
   letter-spacing: 1.1px;
 }
 
+
+
 .homeCta button a {
   color: white;
   text-decoration: none;
 }
 
+ #second-btn{
+  color: black;
+}
+.homeCta button:hover #second-btn{
+  color: rgb(255, 255, 255);
+}
+
 .homeCta button {
   margin-top: 0%;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px;
   font-size: small;
   margin-left: 3%;
@@ -212,18 +259,23 @@ article {
 }
 
 .homeCta button:hover {
-  background-color: transparent;
+  background-color: #3c996a4d;
+  border: 1px solid #3c996a;
+  scale: 1.1;
 }
 
-.second-btn {
-  color: black !important;
-}
 
 .homeCta button:last-child {
   background-color: #cddc39;
-  border: 1px solid #cddc39;
   letter-spacing: 1.3px;
 }
+
+button:hover {
+  background-color: #3c996a4d !important;
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
 
 @media only screen and (min-width: 850px) {
   .homeCta button {
@@ -241,7 +293,7 @@ article {
   margin-right: 5%;
   margin-top: 15%;
   color: darkolivegreen;
-  color: rgb(60, 153, 106);
+  color:#3c996a;
   color: rgb(192, 228, 35);
 }
 
@@ -268,6 +320,7 @@ article {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+
 
 #services h1 {
   letter-spacing: 2px;
@@ -297,12 +350,12 @@ article {
   margin: 30px;
   margin-top: 50px;
   overflow: hidden;
-  box-shadow: 5px 5px 7px 7px gray;
+  box-shadow: 4px 4px 11px 3px #80808075
 }
 
 .child h3 {
   color: #191949;
-  color: rgb(60, 153, 106);
+  color:#3c996a;
   font-size: 5vmin;
   margin-bottom: 20px;
   margin-top: 5px;
@@ -334,7 +387,7 @@ article {
 }
 
 .about h1 {
-  color: rgb(60, 153, 106);
+  color:#3c996a;
   text-shadow: #191919 3px 2px;
 }
 
@@ -379,7 +432,7 @@ article {
 .contact {
   overflow: hidden;
   /* background-color: #192929; */
-  background-image: url(images/contact.jpg);
+  background-image: url(contact.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(contact.jpg);
   background-size: cover;
@@ -387,8 +440,8 @@ article {
   background-position: center;
 }
 
+
 .contact div {
-  margin-top: 40px;
   width: 97%;
 }
 
@@ -397,7 +450,7 @@ article {
 }
 
 .contact h1 {
-  color: darkolivegreen;
+  color: #3c996a;
 }
 
 .instant-contact {
@@ -420,6 +473,17 @@ aside {
   letter-spacing: 2px;
 }
 
+.newsletter .row{
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-container, .letter-content{
+  flex: 1;
+}
+
 input,
 textarea {
   width: 100%;
@@ -427,7 +491,7 @@ textarea {
   border: solid 1px rgb(20, 32, 32);
   border-radius: 5px;
   margin-bottom: 17px;
-  padding: 8px;
+  padding: 10px;
   outline-color: #1e5726;
 }
 
@@ -443,7 +507,7 @@ button {
   margin-top: 10%;
   color: white;
   background-color: transparent;
-  border: 1px solid rgb(60, 153, 106);
+  border: 1px solid#3c996a;
 }
 
 .contact button {
@@ -472,12 +536,6 @@ footer {
   color: white;
 }
 
-button:hover {
-  background-color: rgb(205, 220, 57);
-  color: black;
-  color: black;
-  transform: scale(1.1);
-}
 
 header a,
 li {
@@ -499,6 +557,9 @@ li:hover {
 @media only screen and (min-width: 950px) {
   nav li a {
     font-size: 17px;
+  }
+  .services{
+    padding-inline: 2rem;
   }
 }
 
@@ -626,7 +687,7 @@ li:hover {
   }
 
   .form {
-    margin-top: 140px;
+    margin-top: 100px;
     margin-left: 2%;
   }
 
@@ -719,11 +780,35 @@ li:hover {
   .mobile-menu {
     margin-right: 0px;
   }
+
+  
+  .newsletter .row{
+    display: block;
+  }
+
+  .newsletter p{
+    margin-bottom: 1.5rem;
+  }
+
+  /* .contact div {
+    margin: 40px auto;
+} */
+
+
+
+
+.instant-contact {
+    margin-left: 7%;
+    margin-top: 40px;
 }
 
-@media only screen and (max-width: 460px) {
+}
+
+
+
+@media only screen and (max-width: 550px) {
   .child {
-    box-shadow: 4px 2px 20px 0px rgb(60, 153, 106);
+    box-shadow: 4px 2px 20px 0px#3c996a;
   }
 
   .home {
@@ -731,4 +816,14 @@ li:hover {
     background-size: 1500px;
     background-position: center;
   }
+
+  
 }
+
+@media only screen and (min-width: 700px) {
+
+  .contact div {
+    margin-top: 40px;
+  }
+  
+  }
