@@ -459,7 +459,6 @@ button:hover {
 
 .form {
   width: 100%;
-  text-align: center;
 }
 
 aside {
@@ -741,6 +740,10 @@ li:hover {
   .contact-content {
     margin-top: 50px;
   }
+
+  .form {
+  text-align: center;
+}
 
   ul {
     text-align: left;
