@@ -6,8 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
+html, header {
   scroll-behavior: smooth;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .menu-btn {
@@ -49,6 +51,17 @@ section:not(.home) h1::after {
 
 h1 {
   font-size: 7vmin;
+}
+
+h1, h2, h3 {
+  font-family: cursive;
+
+}
+
+p {
+  line-height: 1.5;
+  word-spacing: 1.2;
+  letter-spacing: 1.1;
 }
 
 .home div {
@@ -122,7 +135,7 @@ li {
   padding-top: 120px;
   padding-bottom: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)),
-    url(student.jpg);
+    url(images/student.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -148,6 +161,7 @@ li {
   word-spacing: 1.1px;
   letter-spacing: 1.1px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 form{
@@ -265,7 +279,8 @@ article {
 }
 
 button:hover {
-  background-color: #3c996a4d !important;
+  /* background-color: #3c996a4d !important; */
+  background: linear-gradient(323deg, #cddc39, #3c996a);
   color: #fff !important;
   transform: scale(1.1);
 }
@@ -374,7 +389,7 @@ button:hover {
   background-color: #191919;
   color: azure;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
-    url(people.jpg);
+    url(images/people.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -426,9 +441,9 @@ button:hover {
 .contact {
   overflow: hidden;
   /* background-color: #192929; */
-  background-image: url(contact.jpg);
+  background-image: url(images/contact.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(contact.jpg);
+    url(images/contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -515,12 +530,77 @@ button {
 }
 
 footer {
-  padding: 20px;
+  padding: 20px;  
+  /* background-color: #0e1b0f; */
   background-color: #191919;
-  text-align: center;
   color: rgb(221, 212, 212);
   text-transform: capitalize;
 }
+
+footer img{
+  width:  100%;
+  margin-left: -15px;
+  width: 16rem;
+ }
+
+
+ footer a{
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+  color: #ffffffb3;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  font-size: 15px;
+ }
+
+ .logo p{
+  margin-top: 1rem;
+ }
+
+ footer a:hover{
+  transform: translate(2px, 0px);
+  color: #3c996a;
+ }
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+
+footer .logo{
+  width: 20rem;
+  display: inline-block;
+  padding: 0;
+}
+
+footer h4{
+  text-align: center;
+
+}
+
+footer svg{
+  width: 100%;
+  max-width: 10rem;
+  display: block;
+  margin: 1rem auto;
+  transition: .3s ease-in-out;
+  margin-left: -8px;
+}
+
+footer svg:hover{
+  transform: translate(4px, -2px);
+}
+
+.copyright{
+  border-top: 1px #3c996a solid;
+  padding: 1rem 0;
+ }
 
 /*hover animation*/
 
@@ -606,7 +686,6 @@ li:hover {
   li {
     margin: 0;
     padding-left: 6px;
-    font-size: small;
   }
 
   nav h1 {
@@ -683,6 +762,7 @@ li:hover {
   .form {
     margin-top: 100px;
     margin-left: 2%;
+    text-align: center;
   }
 
   .contact button {
@@ -711,6 +791,7 @@ li:hover {
   .contact {
     height: auto;
   }
+  
 }
 
 @media only screen and (max-width: 700px) {
@@ -740,10 +821,6 @@ li:hover {
   .contact-content {
     margin-top: 50px;
   }
-
-  .form {
-  text-align: center;
-}
 
   ul {
     text-align: left;
@@ -815,6 +892,12 @@ li:hover {
     background-position: center;
   }
 
+  .footer-row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+  }
   
 }
 
