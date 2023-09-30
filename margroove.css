@@ -441,7 +441,7 @@ button:hover {
 .contact {
   overflow: hidden;
   /* background-color: #192929; */
-  background-image: url(images/contact.jpg);
+  background-image: url(contact.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(contact.jpg);
   background-size: cover;
