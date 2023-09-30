@@ -53,7 +53,7 @@ h1 {
   font-size: 7vmin;
 }
 
-h1, h2, h3 {
+h3 {
   font-family: cursive;
 
 }
@@ -135,7 +135,7 @@ li {
   padding-top: 120px;
   padding-bottom: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)),
-    url(images/student.jpg);
+    url(student.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -389,7 +389,7 @@ button:hover {
   background-color: #191919;
   color: azure;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
-    url(images/people.jpg);
+    url(people.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -443,7 +443,7 @@ button:hover {
   /* background-color: #192929; */
   background-image: url(images/contact.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/contact.jpg);
+    url(contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
