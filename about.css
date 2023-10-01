@@ -5,12 +5,14 @@
     font-family: poppins, sans-serif;
 }
 
-html, header {
+html,
+header {
     max-width: 1500px;
     margin: auto;
-  }
+}
 
-.theme-toggle{
+
+.theme-toggle {
     cursor: pointer;
     position: fixed;
     top: 3%;
@@ -19,36 +21,39 @@ html, header {
     width: 25px;
     height: 25px;
     z-index: 100;
-    box-shadow: 2px 3px 4px  rgb(0, 255, 4);
+    box-shadow: 2px 3px 4px rgb(0, 255, 4);
 }
-ul{
+
+ul {
     cursor: pointer;
     position: absolute;
     top: 2%;
     right: 15%;
     box-shadow: 2px 3px 4px rgb(0, 255, 4);
 }
-.logo{
+
+.logo {
     cursor: pointer;
     position: relative;
     top: 2%;
     left: 1%;
 }
 
-.call-to-action svg{
+.call-to-action svg {
     rotate: -30deg;
 }
 
-main{
+main {
     padding: 80px 10px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 header {
     width: 100%;
     height: 40vh;
     text-transform: capitalize;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)), url(about-header.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)),
+        url(images/about-header.jpg);
     font-weight: bolder;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,10 +61,9 @@ header {
     color: rgb(255, 255, 255);
     z-index: 100;
     position: relative;
-
 }
 
-span{
+span {
     color: rgb(25, 98, 20);
 }
 
@@ -77,12 +81,13 @@ li {
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-
 }
-button a{
+
+button a {
     color: black;
 }
-button a:hover{
+
+button a:hover {
     color: rgb(255, 255, 255);
 }
 
@@ -90,7 +95,8 @@ button a:hover{
     margin: auto;
     margin: 10vw;
 }
-.about-content p{
+
+.about-content p {
     text-align: left;
 }
 
@@ -102,7 +108,6 @@ img {
     text-align: center;
     margin: 100px 0;
 }
-
 
 h2 {
     margin-bottom: 50px;
@@ -131,75 +136,82 @@ button {
     font-size: larger;
     margin-left: 15%;
     background-color: transparent;
+    color: rgba(0, 0, 0, 0.878);
     border: solid 2px#3c996a;
     cursor: pointer;
-    transition: .4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
-.cta{
+button:hover {
+    background-color: #3c996a;
+    color: #ffffffe0;
+}
+
+.cta {
     margin-top: 10px;
     margin-inline: auto;
-    padding: 6px;
+    padding: 8px;
     font-size: large;
     margin-left: 0%;
 }
-.cta a{
-    color: white;
-    transition: .4s ease-in-out;
-}
-button:hover {
-    background-color:#3c996a;
-    color: rgba(255, 255, 255, 0.878);
 
+.cta a {
+    color: white;
+    transition: 0.4s ease-in-out;
 }
 
 .cta:hover a {
-    color:#ffffff;
-
+    color: #ffffff;
 }
 
-footer{
-    text-align: center; 
+.cta:hover {
+    background: transparent;
+}
+
+footer {
+    text-align: center;
     padding: 80px auto;
 }
 
-footer button{
-    background-color:#3c996a;
-    color: rgba(255, 255, 255, 0.878);    
+footer button {
+    background: linear-gradient(323deg, #cddc39, #3c996a);
+    color: rgba(255, 255, 255, 0.878);
 }
 
 footer button:hover {
-   background-color: rgba(255, 255, 255, 0.878);
-   background: linear-gradient(323deg, #cddc39, #3c996a);
-   transform: scale(1.1);
-
+    transform: scale(1.05);
 }
 
-.conclusion{
+.conclusion {
     font-size: 16px;
-        margin: 20px 0px;
-        color: rgba(255, 255, 255, 0.838);
-        padding: 20px;
-    }
-footer p{
-    font-size: .8rem;
+    margin: 20px 0px;
+    color: rgba(255, 255, 255, 0.838);
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.8rem;
     text-align: center;
 }
-.call-to-action{
-    background-color:rgb(14 43 43);
+
+.call-to-action {
+    background-color: rgb(14 43 43);
     padding: 40px 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.social{
+
+.social {
     background-color: #eee;
     padding: 25px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-footer span{
+
+footer span {
     margin-top: 20px;
     display: block;
 }
-.logo{
+
+.logo {
     font-size: 5vmin;
     color: rgb(48, 179, 68);
     margin-left: 0;
@@ -207,30 +219,34 @@ footer span{
     display: block;
     width: fit-content;
 }
-img{
+
+img {
     height: 55%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
-.fab{
-    color:  rgb(255, 255, 255);
+.fab {
+    color: rgb(255, 255, 255);
     margin-inline: 1px;
     cursor: pointer;
 }
+
 /* ------dark theme------ */
 
-.dark-main{
+.dark-main {
     background-color: #192929;
     color: white;
 }
 
-.dark-call-to-action{
+.dark-call-to-action {
     background-color: #0e1515;
 }
-.dark-button{
+
+.dark-button {
     color: white;
 }
-.dark-social{
+
+.dark-social {
     background-color: #192929;
     color: white;
 }
@@ -241,142 +257,146 @@ img{
     text-align: center;
     color: rgb(221, 212, 212);
     text-transform: capitalize;
-  }
+}
 
-  
 .footer {
-    padding: 20px;  
+    padding: 20px;
     /* background-color: #0e1b0f; */
     background-color: #191919;
     color: rgb(221, 212, 212);
     text-transform: capitalize;
-    text-align: left; 
-  }
-  
-  .footer img{
-    width:  100%;
+    text-align: left;
+}
+
+.footer img {
+    width: 100%;
     margin-left: -15px;
     width: 16rem;
-   }
-  
-  
-   .footer a{
+}
+
+.footer a {
     display: block;
     margin: 1rem auto;
     cursor: pointer;
     color: #ffffffb3;
     text-decoration: none;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     font-size: 15px;
-   }
-  
-   .logo p{
+}
+
+.logo p {
     margin-top: 1rem;
-   }
-  
-   .footer a:hover{
+}
+
+.footer a:hover {
     transform: translate(2px, 0px);
     color: #3c996a;
-   }
-  
-   .footer p, footer a {
+}
+
+.footer p,
+footer a {
     text-align: left;
 }
-  .footer-row{
+
+.footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
     gap: 2rem;
-  }
-  
-  .footer-row p{
+}
+
+.footer-row p {
     margin-top: 10px;
 }
-  
-  .footer .logo{
+
+.footer .logo {
     width: 20rem;
     display: inline-block;
     padding: 0;
     color: #fff;
-  }
-  
-  .footer h4{
+}
+
+.footer h4 {
     text-align: center;
-  
+}
+
+.footer h3{
+    color: #3c996a;
   }
-  
-  .footer svg{
+
+.footer svg {
     width: 100%;
     max-width: 10rem;
     display: block;
     margin: 1rem auto;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     margin-left: -8px;
-  }
-  
-  .footer svg:hover{
+}
+
+.footer svg:hover {
     transform: translate(4px, -2px);
-  }
-  
-  .copyright{
+}
+
+.copyright {
     border-top: 1px #3c996a solid;
     padding: 1rem 0;
-   }
-  
-  
+}
+
 /* ------End of dark theme------ */
 
 @media only screen and (min-width: 950px) {
-    
-    
-    .about-img{
+    .about-img {
         margin: auto;
         position: relative;
         top: -250px;
         padding: 10px;
     }
 
-.about-content p{
-    text-align: justify;
-}
-    .about-img img{
+    .about-content p {
+        text-align: justify;
+    }
+
+    .about-img img {
         width: 50%;
         float: right;
-        object-fit: cover; 
+        object-fit: cover;
         height: 75%;
     }
 
-  main p{
+    main p {
         width: 40%;
     }
+
     button {
         padding: 15px;
         margin-top: 2%;
         margin-left: 5%;
-      
     }
-    .about{
+
+    .about {
         margin: auto;
     }
-    h4{
+
+    h4 {
         padding-top: 20px;
     }
-    h2{
-       font-size: 35px; 
-      padding: 50px;
-      padding-left: 0;
-      padding-bottom: 0;
 
+    h2 {
+        font-size: 35px;
+        padding: 50px;
+        padding-left: 0;
+        padding-bottom: 0;
     }
-    footer span{
+
+    footer span {
         margin-top: 5px;
         clear: right;
-
     }
-    footer p{
-        font-size: .8rem;
+
+    footer p {
+        font-size: 0.8rem;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -384,23 +404,16 @@ img{
 
 @media only screen and (min-width: 650px) {
 
-nav,
-ul {
-    margin-left: 5%;
+    nav,
+    ul {
+        margin-left: 5%;
+    }
 }
 
-
-}
 @media only screen and (max-width: 650px) {
-
-    .footer-row{
+    .footer-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
-      }
-
-
+    }
 }
-
-
-

@@ -53,6 +53,11 @@ h1 {
   font-size: 7vmin;
 }
 
+h1, h2, h3 {
+  font-family: cursive;
+
+}
+
 p {
   line-height: 1.5;
   word-spacing: 1.2;
@@ -130,59 +135,10 @@ li {
   padding-top: 120px;
   padding-bottom: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.678)),
-    url(student.jpg);
+    url(images/student.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-}
-
-/* newsletter */
-.newsletter {
-  padding: 30px;
-}
-
-.letter-content {
-  margin: 20px auto;
-  display: flex;
-  gap: 1.3rem;
-}
-
-.newsletter input {
-  border: 1px solid green;
-  margin: unset;
-}
-
-.newsletter p {
-  word-spacing: 1.1px;
-  letter-spacing: 1.1px;
-  margin-bottom: 10px;
-  text-align: justify;
-}
-
-form{
-  position: relative;
-}
-
-.newsLetter-btn {
-  margin: unset;
-  border-radius: unset;
-  padding: unset;
-  padding-inline: 5px;
-  cursor: pointer;
-  background-color: #c0e423;
-  color: #000000e3;
-  letter-spacing: 1.1px;
-  font-weight: bold;
-  font-size: small;
-  transition: all ease 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.newsLetter-btn:hover {
-  background-color: black !important;
 }
 
 /* a quickmedia query for some style so far */
@@ -241,9 +197,7 @@ article {
   text-decoration: none;
 }
 
- #second-btn{
-  color: black;
-}
+
 .homeCta button:hover #second-btn{
   color: rgb(255, 255, 255);
 }
@@ -267,18 +221,24 @@ article {
   scale: 1.1;
 }
 
-
-.homeCta button:last-child {
-  background-color: #cddc39;
-  letter-spacing: 1.3px;
-}
-
 button:hover {
   /* background-color: #3c996a4d !important; */
   background: linear-gradient(323deg, #cddc39, #3c996a);
   color: #fff !important;
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
+
+.homeCta button:last-child {
+  background: linear-gradient(323deg, #cddc39, #3c996a);
+  letter-spacing: 1.3px;
+  padding: 14px;
+}
+.homeCta button:last-child:hover {
+  transform: scale(1.03);
+  background: transparent;
+}
+
+
 
 
 @media only screen and (min-width: 850px) {
@@ -384,7 +344,7 @@ button:hover {
   background-color: #191919;
   color: azure;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
-    url(people.jpg);
+    url(images/people.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,9 +396,9 @@ button:hover {
 .contact {
   overflow: hidden;
   /* background-color: #192929; */
-  background-image: url(contact.jpg);
+  background-image: url(images/contact.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(contact.jpg);
+    url(images/contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -483,6 +443,59 @@ aside {
   align-items: center;
   justify-content: space-evenly;
 }
+
+
+/* newsletter */
+.newsletter {
+  padding: 30px;
+}
+
+.letter-content {
+  margin: 20px auto;
+  display: flex;
+  gap: 1.3rem;
+}
+
+.newsletter input {
+  border: 1px solid green;
+  margin: unset;
+}
+
+.newsletter p {
+  word-spacing: 1.1px;
+  letter-spacing: 1.1px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+form{
+  position: relative;
+}
+
+.newsLetter-btn {
+  margin: unset;
+  border-radius: unset;
+  padding: unset;
+  padding-inline: 5px;
+  cursor: pointer;
+  background: linear-gradient(323deg, #cddc39, #3c996a);
+  color: #ffffffe3;
+  letter-spacing: 1.1px;
+  font-weight: bolder;
+  font-size: 14px;
+  transition: all ease 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.newsLetter-btn:hover {
+  background: #c0e423;
+  color: black !important;
+  transform: scale(1.03);
+}
+
 
 .form-container, .letter-content{
   flex: 1;
@@ -577,6 +590,10 @@ footer .logo{
 footer h4{
   text-align: center;
 
+}
+
+footer h3{
+  color: #3c996a;
 }
 
 footer svg{
@@ -893,6 +910,10 @@ li:hover {
     gap: 2rem;
 
   }
+  
+  .newsLetter-btn {
+    font-size: small;
+}
   
 }
 

@@ -125,7 +125,7 @@ li a {
   transition: ease-out 0.2s;
 }
 .cta a {
-  color: azure;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -205,7 +205,7 @@ button {
 button {
   cursor: pointer;
   padding: 8px 40px;
-  background-color: #3c996a;
+  background: linear-gradient(323deg, #cddc39, #3c996a);
   border: solid 2px#3c996a;
   border-radius: 50px;
   margin-top: 30px;
@@ -214,24 +214,21 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(323deg, #cddc39, #3c996a);
+  background-color: #3c996a;
   border: solid 2px#3c996a;
   transform: scale(1.1);
 }
 
 button:hover a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
-.first-btn {
-  color: white;
-}
 
-.newsLetter-btn {
+body .newsLetter-btn {
   cursor: pointer;
   border: solid 2px #c0e423;
   padding: 6px 12px;
-  background-color: #c0e423;
+  background: #c0e423;
   letter-spacing: 1.1px;
   font-weight: bold;
   transition: all ease 0.3s;
@@ -325,7 +322,7 @@ button:hover {
 }
 
 .footer {
-  padding: 10px;
+  padding: 20px;
   /* background-color: #0e1b0f; */
   background-color: #191919;
   color: rgb(221, 212, 212);
@@ -382,6 +379,10 @@ button:hover {
 
 .footer h4 {
   text-align: center;
+}
+
+.footer h3{
+  color: #3c996a;
 }
 
 .footer svg {
