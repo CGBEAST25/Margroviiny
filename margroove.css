@@ -889,9 +889,9 @@ li:hover {
 
 
 @media only screen and (max-width: 550px) {
- /* .child {
-    box-shadow: 4px 2px 20px 0px#3c996a;
-  }*/
+  .child {
+    box-shadow: 2.5px 1.5px 15px 0px#3c996a;
+  }
 
   .home {
     margin-top: 0;
