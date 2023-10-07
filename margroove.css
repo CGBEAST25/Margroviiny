@@ -906,6 +906,10 @@ li:hover {
     background-position: center;
   }
 
+  footer{
+    padding: 1rem .78rem;
+  }
+
   .footer-row{
     flex-direction: column;
     align-items: flex-start;
@@ -916,6 +920,7 @@ li:hover {
   footer .logo{
     width: 100%;
   }
+  
   
   .newsLetter-btn {
     font-size: small;
