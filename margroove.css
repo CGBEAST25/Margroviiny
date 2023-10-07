@@ -502,7 +502,7 @@ form{
 input,
 textarea {
   width: 100%;
-  font-weight: 600;
+  font-weight: 300;
   border: solid 1px rgb(20, 32, 32);
   border-radius: 5px;
   margin-bottom: 17px;
@@ -583,6 +583,7 @@ footer .logo{
   width: 20rem;
   display: inline-block;
   padding: 0;
+  text-transform: normal;
 }
 
 footer h4{
@@ -909,6 +910,10 @@ li:hover {
     align-items: flex-start;
     gap: 2rem;
 
+  }
+
+  footer .logo{
+    width: 100%;
   }
   
   .newsLetter-btn {
