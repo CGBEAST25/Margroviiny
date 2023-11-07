@@ -133,7 +133,7 @@ li {
   box-sizing: content-box;
   padding-top: 120px;
   padding-bottom: 30px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.65)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/student.jpg);
   background-repeat: no-repeat;
   background-position: left;
@@ -342,7 +342,7 @@ button:hover {
 .about {
   background-color: #191919;
   color: azure;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
     url(images/people.jpg);
   background-position: center;
   background-repeat: no-repeat;
